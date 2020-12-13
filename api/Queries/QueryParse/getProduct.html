@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the getProduct method from the QueryParse class, for the Dart programming language.">
+  <title>getProduct method - QueryParse class - Queries library - Dart API</title>
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../static-assets/github.css">
+  <link rel="stylesheet" href="../../static-assets/styles.css">
+  <link rel="icon" href="../../static-assets/favicon.png">
+
+</head>
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">tryme</a></li>
+    <li><a href="../../Queries/Queries-library.html">Queries</a></li>
+    <li><a href="../../Queries/QueryParse-class.html">QueryParse</a></li>
+    <li class="self-crumb">getProduct method</li>
+  </ol>
+  <div class="self-name">getProduct</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="../../index.html">tryme</a></li>
+      <li><a href="../../Queries/Queries-library.html">Queries</a></li>
+      <li><a href="../../Queries/QueryParse-class.html">QueryParse</a></li>
+      <li class="self-crumb">getProduct method</li>
+    </ol>
+    
+    <h5>QueryParse class</h5>
+    <ol>
+
+
+    <li class="section-title"><a href="../../Queries/QueryParse-class.html#constructors">Constructors</a></li>
+    <li><a href="../../Queries/QueryParse/QueryParse.html">QueryParse</a></li>
+
+    <li class="section-title"> <a href="../../Queries/QueryParse-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title"><a href="../../Queries/QueryParse-class.html#instance-methods">Methods</a></li>
+    <li><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title"><a href="../../Queries/QueryParse-class.html#operators">Operators</a></li>
+    <li><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+
+    <li class="section-title"><a href="../../Queries/QueryParse-class.html#static-methods">Static methods</a></li>
+    <li><a href="../../Queries/QueryParse/getCategories.html">getCategories</a></li>
+    <li><a href="../../Queries/QueryParse/getOrder.html">getOrder</a></li>
+    <li><a href="../../Queries/QueryParse/getProduct.html">getProduct</a></li>
+    <li><a href="../../Queries/QueryParse/getProductList.html">getProductList</a></li>
+    <li><a href="../../Queries/QueryParse/getShoppingCard.html">getShoppingCard</a></li>
+    <li><a href="../../Queries/QueryParse/getUser.html">getUser</a></li>
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1><span class="kind-method">getProduct</span> method </h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="../../my_prj.globals/Product-class.html">Product</a></span>
+            <span class="name ">getProduct</span>
+(<wbr><ol class="parameter-list"><li><span class="parameter" id="getProduct-param-result"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/dart-core/Map-class.html">Map</a></span> <span class="parameter-name">result</span></span></li>
+</ol>)
+      
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">static Product getProduct(Map result) {
+  Product product = Product();
+
+  if (result[&#39;id&#39;] != null) product.id = result[&#39;id&#39;];
+  if (result[&#39;name&#39;] != null) product.name = result[&#39;name&#39;];
+  if (result[&#39;brand&#39;] != null) product.brand = result[&#39;brand&#39;];
+  if (result[&#39;stock&#39;] != null) product.stock = result[&#39;stock&#39;];
+  if (result[&#39;price_per_month&#39;] != null)
+    product.pricePerMonth = result[&#39;price_per_month&#39;] != null
+        ? result[&#39;price_per_month&#39;].toDouble()
+        : null;
+  if (result[&#39;stock&#39;] != null) product.stock = result[&#39;stock&#39;];
+  if (result[&#39;description&#39;] != null)
+    product.description = result[&#39;description&#39;];
+  if (result[&#39;product_specifications&#39;] != null)
+    product.specifications = result[&#39;product_specifications&#39;];
+  if (result[&#39;reviews&#39;] != null) {
+    (result[&#39;reviews&#39;] as List).forEach((element) {
+      Review review = Review();
+      if (element[&#39;created_at&#39;] != null) review.date = element[&#39;created_at&#39;];
+      if (element[&#39;user&#39;] != null &amp;&amp; element[&#39;user&#39;][&#39;name&#39;] != null)
+        review.user = element[&#39;user&#39;][&#39;name&#39;];
+      if (element[&#39;score&#39;] != null)
+        review.score = element[&#39;score&#39;].toDouble();
+      if (element[&#39;description&#39;] != null)
+        review.description = element[&#39;description&#39;];
+      product.reviews.reviews.add(review);
+    });
+  }
+  if (result[&#39;reviews_aggregate&#39;] != null &amp;&amp;
+      result[&#39;reviews_aggregate&#39;][&#39;aggregate&#39;] != null &amp;&amp;
+      result[&#39;reviews_aggregate&#39;][&#39;aggregate&#39;][&#39;avg&#39;] != null &amp;&amp;
+      result[&#39;reviews_aggregate&#39;][&#39;aggregate&#39;][&#39;avg&#39;][&#39;score&#39;] != null)
+    product.reviews.averageRating =
+        result[&#39;reviews_aggregate&#39;][&#39;aggregate&#39;][&#39;avg&#39;][&#39;score&#39;].toDouble();
+  if (result[&#39;picture_url&#39;] != null) {
+    product.pictures.add(result[&#39;picture_url&#39;].trim());
+  }
+  return (product);
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    tryme
+      1.0.0+1
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../../static-assets/typeahead.bundle.min.js"></script>
+<script src="../../static-assets/highlight.pack.js"></script>
+<script src="../../static-assets/URI.js"></script>
+<script src="../../static-assets/script.js"></script>
+
+
+</body>
+
+</html>

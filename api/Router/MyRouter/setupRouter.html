@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the setupRouter method from the MyRouter class, for the Dart programming language.">
+  <title>setupRouter method - MyRouter class - Router library - Dart API</title>
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../static-assets/github.css">
+  <link rel="stylesheet" href="../../static-assets/styles.css">
+  <link rel="icon" href="../../static-assets/favicon.png">
+
+</head>
+
+<body data-base-href="../../"
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">tryme</a></li>
+    <li><a href="../../Router/Router-library.html">Router</a></li>
+    <li><a href="../../Router/MyRouter-class.html">MyRouter</a></li>
+    <li class="self-crumb">setupRouter method</li>
+  </ol>
+  <div class="self-name">setupRouter</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li><a href="../../index.html">tryme</a></li>
+      <li><a href="../../Router/Router-library.html">Router</a></li>
+      <li><a href="../../Router/MyRouter-class.html">MyRouter</a></li>
+      <li class="self-crumb">setupRouter method</li>
+    </ol>
+    
+    <h5>MyRouter class</h5>
+    <ol>
+
+
+    <li class="section-title"><a href="../../Router/MyRouter-class.html#constructors">Constructors</a></li>
+    <li><a href="../../Router/MyRouter/MyRouter.html">MyRouter</a></li>
+
+    <li class="section-title"> <a href="../../Router/MyRouter-class.html#instance-properties">Properties</a>
+    </li>
+    <li><a href="https://api.flutter.dev/flutter/dart-core/Object/hashCode.html">hashCode</a></li>
+    <li><a href="https://api.flutter.dev/flutter/dart-core/Object/runtimeType.html">runtimeType</a></li>
+
+    <li class="section-title"><a href="../../Router/MyRouter-class.html#instance-methods">Methods</a></li>
+    <li><a href="https://api.flutter.dev/flutter/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
+    <li><a href="https://api.flutter.dev/flutter/dart-core/Object/toString.html">toString</a></li>
+
+    <li class="section-title"><a href="../../Router/MyRouter-class.html#operators">Operators</a></li>
+    <li><a href="https://api.flutter.dev/flutter/dart-core/Object/operator_equals.html">operator ==</a></li>
+
+    <li class="section-title"><a href="../../Router/MyRouter-class.html#static-properties">Static properties</a></li>
+    <li><a href="../../Router/MyRouter/router.html">router</a></li>
+
+    <li class="section-title"><a href="../../Router/MyRouter-class.html#static-methods">Static methods</a></li>
+    <li><a href="../../Router/MyRouter/setupRouter.html">setupRouter</a></li>
+
+</ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <div><h1><span class="kind-method">setupRouter</span> method </h1></div>
+
+    <section class="multi-line-signature">
+      <span class="returntype">void</span>
+            <span class="name ">setupRouter</span>
+(<wbr>)
+      
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span></h2>
+      <pre class="language-dart"><code class="language-dart">static void setupRouter() {
+  router.define(
+    &#39;app&#47;:index&#39;,
+    handler: _appIndexHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;app&#39;,
+    handler: _appHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;landing&#39;,
+    handler: _landingHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;orders&#39;,
+    handler: _ordersHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;orderFinished&#47;:orderId&#39;,
+    handler: _orderFinishedHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;product&#47;:id&#39;,
+    handler: _productHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;searchResult&#47;:category&#47;:keywords&#39;,
+    handler: _searchResultHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;shoppingCard&#39;,
+    handler: _shoppingCardHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;signIn&#39;,
+    handler: _signInHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;signUpEmail&#39;,
+    handler: _signUpEmailViewHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;signUpPassword&#47;:email&#39;,
+    handler: _signUpPasswordViewHandler,
+    transitionType: TransitionType.cupertino,
+  );
+  router.define(
+    &#39;payment&#39;,
+    handler: _paymentViewHandler,
+    transitionType: TransitionType.cupertino,
+  );
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    tryme
+      1.0.0+1
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../../static-assets/typeahead.bundle.min.js"></script>
+<script src="../../static-assets/highlight.pack.js"></script>
+<script src="../../static-assets/URI.js"></script>
+<script src="../../static-assets/script.js"></script>
+
+
+</body>
+
+</html>
